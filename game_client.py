@@ -8,6 +8,7 @@ import threading
 
 # MAIN GAME'S WINDOW AND VARIABLE
 window_main = tk.Tk()
+window_main.iconbitmap("icon.ico")
 window_main.title("Game Client")
 your_name = ""
 opponent_name = ""
