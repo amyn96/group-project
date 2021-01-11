@@ -25,6 +25,11 @@ client = None
 HOST_ADDR = "192.168.43.50"
 HOST_PORT = 8000
 
+#BACKGROUD
+bg = ImageTk.PhotoImage(file = "background.jpg")
+mylabel = Label(window_main, image = bg)
+mylabel.place(x=0, y=0, relwidth=1,relheight=1)
+
 # MAIN WINDOW
 top_welcome_frame= tk.Frame(window_main)
 lbl_name = tk.Label(top_welcome_frame, text = "Name:")
