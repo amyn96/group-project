@@ -5,7 +5,14 @@ from time import sleep
 
 
 window = tk.Tk()
+window.iconbitmap("icon.ico")
+window.configure(background='grey')
 window.title("Sever")
+
+#BACKGROUD
+bg = ImageTk.PhotoImage(file = "background.jpg")
+mylabel = Label(window, image = bg)
+mylabel.place(x=0, y=0, relwidth=1,relheight=1)
 
 # START AND STOP BUTTON
 topFrame = tk.Frame(window)
