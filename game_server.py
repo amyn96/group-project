@@ -51,7 +51,7 @@ clients_names = []
 player_data = []
 
 
-# FUNCTION TO START SERVER
+# FUNCTION TO START (SERVER)
 def start_server():
     global server, HOST_ADDR, HOST_PORT # code is fine without this
     btnStart.config(state=tk.DISABLED)
@@ -70,7 +70,7 @@ def start_server():
     lblPort["text"] = "Port: " + str(HOST_PORT)
 
 
-# FUNCTION TO STOP SERVER
+# FUNCTION TO STOP (SERVER)
 def stop_server():
     global server
     btnStart.config(state=tk.NORMAL)
