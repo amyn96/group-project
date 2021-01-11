@@ -1,7 +1,9 @@
 import tkinter as tk
+from tkinter import *
 import socket
 import threading
 from time import sleep
+from PIL import ImageTk, Image
 
 
 window = tk.Tk()
