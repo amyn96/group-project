@@ -20,9 +20,9 @@ mylabel.place(x=0, y=0, relwidth=1,relheight=1)
 
 # START AND STOP BUTTON
 topFrame = tk.Frame(win)
-btnStart = tk.Button(topFrame, text="Start", command=lambda : start_server())
+btnStart = tk.Button(topFrame, text="Start", command=lambda : start_server(), bg = "green")
 btnStart.pack(side=tk.LEFT)
-btnStop = tk.Button(topFrame, text="Stop", command=lambda : stop_server(), state=tk.DISABLED)
+btnStop = tk.Button(topFrame, text="Stop", command=lambda : stop_server(), bg = "red", state=tk.DISABLED)
 btnStop.pack(side=tk.LEFT)
 topFrame.pack(side=tk.TOP, pady=(5, 0))
 
